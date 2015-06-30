@@ -1,0 +1,9 @@
+{{#each model as |pin|}}
+  <li class="pin-thumbnail">
+    {{#link-to 'pins.show' pin}}
+      {{pin.title}}
+    {{/link-to}}
+  </li>
+{{/each}}
+
+{{link-to "Create" 'pins.create'}}
