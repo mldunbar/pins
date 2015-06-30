@@ -1,5 +1,6 @@
 {{#each model as |pin|}}
   <li class="pin-thumbnail">
+    <img src="{{pin.url}}" alt="" />
     {{#link-to 'pins.show' pin}}
       {{pin.title}}
     {{/link-to}}
