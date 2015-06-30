@@ -16,7 +16,7 @@ module.exports = function(environment) {
     APP: {
       applicationId: 'oh6KgKEvEcdIn5FUY0na5FL3H6rs1hTkZcMF9Wsn',
       restApiId: 'l3yVwZ0pmXEnyjD1RcCSUcuZgjLWK07wIw1FEct2'
-    }
+    },
 
     contentSecurityPolicy: {
       'default-src': "'none'",
