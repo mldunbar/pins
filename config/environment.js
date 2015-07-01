@@ -26,8 +26,11 @@ module.exports = function(environment) {
       'img-src': "'self' placebear.com placekitten.com",
       'style-src': "'self'",
       'media-src': "'self'"
-    }
+    },
 
+  'simple-auth': {
+      routeAfterAuthentication: 'landing'
+    }
   };
 
   if (environment === 'development') {

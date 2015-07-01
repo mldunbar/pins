@@ -40,14 +40,15 @@ ParseAuthenticator = Base.extend({
       };
       return Ember.RSVP.resolve(data);
     } else {
-      return store.modelFor('parseUser').login(store, data).then(function(user) {
-        console.log('authenticator:authenticate', user.get('sessionToken'));
+      return store.modelFor('parseUser').login(store, {
+        username: data.identification,
+        password: data.password
+      }).then(function(user) {
         adapter.set('sessionToken', user.get('sessionToken'));
         data = {
           userId: user.get('id'),
           sessionToken: user.get('sessionToken')
         };
-        console.log('authenticator:authenticate', data);
         return data;
       }, console.error.bind(console));
     }

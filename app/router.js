@@ -14,7 +14,7 @@ Router.map(function() {
 
   this.route('users', function(){
     this.route('create');
-    this.route('show');
+    this.route('show', {path: ':id'});
   });
 
   this.route('pins', function() {
