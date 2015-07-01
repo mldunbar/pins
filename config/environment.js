@@ -14,8 +14,22 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      applicationId: 'oh6KgKEvEcdIn5FUY0na5FL3H6rs1hTkZcMF9Wsn',
+      restApiId: 'l3yVwZ0pmXEnyjD1RcCSUcuZgjLWK07wIw1FEct2'
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'self' api.parse.com",
+      'img-src': "'self' placebear.com placekitten.com",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    },
+
+  'simple-auth': {
+      routeAfterAuthentication: 'landing'
     }
   };
 
