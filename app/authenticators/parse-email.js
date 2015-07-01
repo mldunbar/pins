@@ -1,5 +1,7 @@
 import Ember from 'ember';
 import Base from 'simple-auth/authenticators/base';
+
+//Copied from https://github.com/clintjhill/ember-parse-adapter/wiki/Ember-Simple-Auth-Cookbook
 var ParseAuthenticator;
 
 ParseAuthenticator = Base.extend({
