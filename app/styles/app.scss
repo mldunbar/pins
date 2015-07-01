@@ -1,3 +1,14 @@
-ul, li {
+ul {
   list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+a:hover{
+  font-weight: bolder;
+  border: 1px solid red;
 }

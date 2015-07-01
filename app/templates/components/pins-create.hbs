@@ -1,4 +1,6 @@
-{{input type="text" value=model.title placeholder="Title"}}
-{{input type="text" value=model.url placeholder="URL"}}
-<button {{action 'save'}}>Save</button>
+<div class="new-pin">
+  {{input type="text" value=model.title placeholder="Title"}}
+  {{input type="text" value=model.url placeholder="URL"}}
+  <button {{action 'save'}}>Save</button>
+</div>
 {{yield}}
