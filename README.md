@@ -1,7 +1,8 @@
 # Pins
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+I built this in week 9 of The Iron Yard to practice using the Ember framework. Users can create and save images.
+
+The rest of this README outlines the details of collaborating on this Ember application.
 
 ## Prerequisites
 
